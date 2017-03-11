@@ -1,15 +1,15 @@
 package com.data.structures.linked.list;
 
-public class LinkedListNode {
+public class LinkedListNode<T> {
 	
-	LinkedListNode next = null; 
-	int data;
+	LinkedListNode<T> next = null; 
+	T data ;
 	
-	LinkedListNode(int d){
+	LinkedListNode( T d){
 		data = d;
 	}
 	
-	public void appendToTail(int d){
+	public void appendToTail(T d){
 		LinkedListNode end = new LinkedListNode(d);
 		LinkedListNode n = this;
 		while(n.next!=null){
