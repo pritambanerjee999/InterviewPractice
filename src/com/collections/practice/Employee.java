@@ -2,7 +2,7 @@ package com.collections.practice;
 
 import java.util.Comparator;
 
-public class Employee implements Comparable {
+public class Employee implements Comparable<Object> {
 	
 	private Integer id;
 	private String fullName;

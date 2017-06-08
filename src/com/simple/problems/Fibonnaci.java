@@ -8,13 +8,13 @@ public class Fibonnaci {
 		
 		int fibSeries[] = fib(num);
 		
-		for (int i = 0; i < fibSeries.length; i ++){
+		for (int i = 0; i < fibSeries.length; i++){
 			System.out.println(fibSeries[i]);
 		}
 		
 		int fibSeriesRec[] = fibByRec(num);
 		
-		for (int i = 0; i < fibSeriesRec.length; i ++){
+		for (int i = 0; i < fibSeriesRec.length; i++){
 			System.out.println(fibSeriesRec[i]);
 		}
 		

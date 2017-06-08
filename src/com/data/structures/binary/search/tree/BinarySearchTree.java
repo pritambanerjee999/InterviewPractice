@@ -31,6 +31,27 @@ public class BinarySearchTree {
 	}
 
 
+	public void insertNode2(int data){
+		Node node = new Node(data);
+		Node currentNode = root;
+		Node parent;
+		
+		while(true){
+			
+			if (data < currentNode.data){
+				parent = currentNode;
+				currentNode = currentNode.leftNode;
+				if(currentNode == null){
+					parent.leftNode = node;
+				}
+			}
+		}
+		
+		
+		
+	
+	}
+	
 	public void traverseTree(Node root){
 
 		if (root!=null){

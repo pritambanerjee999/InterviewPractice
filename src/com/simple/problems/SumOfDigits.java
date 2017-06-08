@@ -11,7 +11,7 @@ public class SumOfDigits {
 		
 		while (numOfDigits.length>1){
 			int sum = 0;
-			for (int i = 0; i < numOfDigits.length; i ++){
+			for (int i = 0; i < numOfDigits.length; i++){
 				sum = sum + numOfDigits[i];
 			}
 			System.out.println(sum);

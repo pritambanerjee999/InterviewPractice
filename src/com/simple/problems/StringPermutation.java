@@ -20,5 +20,21 @@ public class StringPermutation {
 	}
 	
 	
+	public static String permutation2(String prefix, String perm){
+	
+		if (perm.length() == 0){
+			System.out.println(prefix);
+			return prefix;
+		}else{
+			for(int i = 0;i < perm.length(); i++){
+				permutation2(prefix + perm.charAt(i), perm.substring(0,i) + perm.substring(i+1,perm.length() -1));
+			}
+			
+		}
+		
+		return prefix;
+	}
+	
+	
 	
 }
