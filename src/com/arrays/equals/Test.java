@@ -17,7 +17,7 @@ public class Test {
         
         Object[] objArray = new Object[strArray.length + intArray.length];
         
-        objArray = ArrayUtils.addAll(strArray, intArray);
+       
         
 
         System.out.println("Arrays.equals() = " + Arrays.equals(rows1, rows2));
