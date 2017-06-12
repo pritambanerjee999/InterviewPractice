@@ -3,7 +3,7 @@ package com.data.structures.binary.search.tree;
 public class BinarySearchTree {
 	public Node root;
 
-	BinarySearchTree(Integer data){
+	public BinarySearchTree(Integer data){
 		root = new Node(data);
 	}
 

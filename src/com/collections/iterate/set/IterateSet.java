@@ -20,6 +20,8 @@ public class IterateSet {
 		long startTime = System.nanoTime();
 		long endTime = System.nanoTime();
 		
+		set.contains("");
+		
 		//using iterator
 		System.out.println("Using Iterator");
 		startTime = System.nanoTime();

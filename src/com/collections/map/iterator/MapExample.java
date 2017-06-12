@@ -77,6 +77,12 @@ public class MapExample {
 			System.out.println(key);
 		}
 	}
+	
+	public static void keySetIteration(Map<String, Integer> map){
+		for(String key: map.keySet()){
+			System.out.println(map.get(key));
+		}
+	}
 
 
 
