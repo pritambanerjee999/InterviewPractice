@@ -1,10 +1,15 @@
 package com.simple.problems;
 
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
 public class StringPermutation {
 	
 	public static void main(String args[]){
 		String perm = "Abcd";
-		int arr[] = {1,2,3,4}; 
+		
 		System.out.println(permutation("",perm));
 	}
 	
@@ -35,6 +40,18 @@ public class StringPermutation {
 		return prefix;
 	}
 	
+	public String inputChecker(List<String> input){
+		
+		List<String> arrString = Arrays.asList("A","B","C");
+	    Set<String> noDups = new HashSet<>(input);
+		for(String s: noDups){
+	    	if (input.indexOf("A")>0 || arrString.indexOf("B")>0 || arrString.indexOf("B") > 0){
+	    		return s;
+	    	}
+	    }
+		
+		return "Invalid Input";
+	}
 	
 	
 }
